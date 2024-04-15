@@ -9,69 +9,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
     <style>
-        body {
+        html {
             font-family: "Nunito", sans-serif;
-            background-color: bisque;
-        }
-        .header {
             text-align: center;
-            margin: 0px; 
         }
-        .header>h1 {
-            font-size: 3rem;
-            margin: 0px;
+
+        body {
+            background-color: rgb(235, 214, 188);
+            display:flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        .header>h2 {
-            margin: 0px;
-            font-size: 2rem;
+
+        .triple-content{
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
         }
-        .about-me {
-            background-color: aquamarine;
-            position:absolute;
-            top:0px;
-            left:2.5%;
-        }
-        .contact {
-            background-color: tomato;
-            position:absolute;
-            top:0px;
-            left:35%;
-        }
-        .location {
-            background-color: blueviolet;
-            position:absolute;
-            top:0px;
-            left:67.5%;
-        }
-        .content {
-            height: 250px;
-            width:30%;
+
+        .content{
+            flex: 220px;
+            max-width: 50%;
+            min-width: 220px;
+            margin:10px;
+            text-align: center;
             border-radius: 10%;
-            text-align: center;
-            font-size: 1.5rem;
-        } 
-       .triple-content {
-            position: relative;
-            top:30px;
+            display:flex;
+            flex-flow: column wrap;
+            justify-content:space-between;
+            overflow-y: hidden;
         }
-       p {
-        margin:0px
-       }
-       .content-category {
-        position:absolute;
-        top: 200px;
-        width:100%;
-        text-align: left;
-        margin-left:10px;
-        font-size: 2rem;
-       }
-      .text{
-        background-color: red;
-        position:absolute;
-        width:95%;
-        left:2.5%;
-        top:50px
-      }
+
+        .about-me{
+            background-color: aqua;
+        }
+
+        .location{
+            background-color: brown;
+            
+        }
+
+        .contact{
+            background-color: grey;
+            
+        }
+
+        .content-category{
+            background-color: beige;
+            width: 75%;
+            min-width: 100px;
+            align-self: flex-end;
+        }
+
+        .text{
+            margin-top: 10%;
+            background-color: aquamarine;
+        }
+
+        footer{
+            color:rgb(153, 153, 153);
+            background-color: beige;
+            margin-top: auto;
+        }
     </style>
 </head>
 <body>
@@ -83,24 +82,36 @@
     <div class="triple-content">
 
         <div class="about-me content">
-            <div class="text">Date of birth:<br/>5 August 1995 <br/>Nationality:<br/> Romanian</p></div>
+            <div class="text"><p>Date of birth:<br/>5 August 1995 <br/>Nationality:<br/> Romanian</p></div>
             <div class="content-category"><p>About me</p></div>
         </div>
 
         <div class="contact content">
-            <img src="./assets/envelope.png" height="50" alt="envelope"/>
-            <img src="./assets/phone.png" height="50" alt="phone">
-            <div class="text"><p>Mail me: <br/>lorincristian.rusu@gmail.com <br/>Call me: <br/>+31 6 138 718 39</p></div>
+            
+            <div class="text">
+                <img src="./assets/envelope.png" height="50" alt="envelope"/>
+                <img src="./assets/phone.png" height="50" alt="phone">
+                <p>Mail me: <br/>lorincristian.rusu@gmail.com <br/>Call me: <br/>+31 6 138 718 39</p>
+            </div>
             <div class="content-category"><p>Contact</p></div>
         </div>
 
         <div class="location content">
-            <img src="./assets/location.png" height="50"alt="location pin">
-            <div class="text"><p>Arnhem</p><p>The Netherlands</p></div>
+            
+            <div class="text">
+                <img src="./assets/location.png" height="50"alt="location pin">
+                <p>Arnhem</p>
+                <p>The Netherlands</p>
+            </div>
             <div class="content-category"><p >Location</p></div>
         </div>
         
     </div>
-    
+    <footer>
+        <hr/>
+        © 2024 - L.C. Rusu - Arnhem, NL
+    </footer>
 </body>
+
+
 </html>
