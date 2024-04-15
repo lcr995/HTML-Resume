@@ -1,0 +1,78 @@
+html {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: #EEF0E5;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin:0;
+}
+
+.header {
+    background-color: #163020;
+    color: #EEF0E5;
+}
+.triple-content{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.content{
+    flex: 220px;
+    max-width: 50%;
+    min-width: 220px;
+    margin:10px;
+    text-align: center;
+    border-radius: 10%;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content:space-between;
+    overflow-y: hidden;
+    background-color: #B6C4B6;
+    border: 3px solid #163020;
+}
+
+.content-category{
+    background-color: #163020;
+    color:#EEF0E5;
+    font-size:1.6rem;
+    font-weight: 700;
+    width:70%;
+    padding-inline:10px;
+    min-width: 100px;
+    align-self: flex-end;
+}
+.content-category>p{
+    margin:5px;
+}
+.contact {
+    min-width: 270px;
+}
+
+.text {
+    margin-top: 10%;
+    font-size:1.5rem;
+    font-weight: 500;
+    color: #163020;
+}
+
+.contact>.text>p {
+    margin:0;
+}
+.contact>.text>p:first-of-type {
+    margin-top: 24px;
+}
+
+#email {
+    font-size: 1.2rem;
+}
+
+footer{
+    color:rgb(153, 153, 153);
+    margin-top: auto;
+}

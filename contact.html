@@ -4,74 +4,12 @@
     <meta charset="UTF-8">
     <title>LC Rusu - Contact</title>
 
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
-    <style>
-        html {
-            font-family: "Nunito", sans-serif;
-            text-align: center;
-        }
-
-        body {
-            background-color: rgb(235, 214, 188);
-            display:flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        .triple-content{
-            display:flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-        }
-
-        .content{
-            flex: 220px;
-            max-width: 50%;
-            min-width: 220px;
-            margin:10px;
-            text-align: center;
-            border-radius: 10%;
-            display:flex;
-            flex-flow: column wrap;
-            justify-content:space-between;
-            overflow-y: hidden;
-        }
-
-        .about-me{
-            background-color: aqua;
-        }
-
-        .location{
-            background-color: brown;
-            
-        }
-
-        .contact{
-            background-color: grey;
-            
-        }
-
-        .content-category{
-            background-color: beige;
-            width: 75%;
-            min-width: 100px;
-            align-self: flex-end;
-        }
-
-        .text{
-            margin-top: 10%;
-            background-color: aquamarine;
-        }
-
-        footer{
-            color:rgb(153, 153, 153);
-            background-color: beige;
-            margin-top: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="header">
@@ -82,7 +20,10 @@
     <div class="triple-content">
 
         <div class="about-me content">
-            <div class="text"><p>Date of birth:<br/>5 August 1995 <br/>Nationality:<br/> Romanian</p></div>
+            <div class="text">
+                <img src="./assets/person.png" height="50" alt="person logo"/>
+                <p>Date of birth:<br/>5 August 1995 <br/>Nationality:<br/> Romanian</p>
+            </div>
             <div class="content-category"><p>About me</p></div>
         </div>
 
@@ -91,7 +32,8 @@
             <div class="text">
                 <img src="./assets/envelope.png" height="50" alt="envelope"/>
                 <img src="./assets/phone.png" height="50" alt="phone">
-                <p>Mail me: <br/>lorincristian.rusu@gmail.com <br/>Call me: <br/>+31 6 138 718 39</p>
+                <p>Mail me:</p><p id="email">lorincristian.rusu@gmail.com</p>
+                <p>Call me: <br/>+31 (0)6 138 718 39</p>
             </div>
             <div class="content-category"><p>Contact</p></div>
         </div>
