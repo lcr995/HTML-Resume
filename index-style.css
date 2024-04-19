@@ -2,10 +2,20 @@ body{
     font-family:"Albert sans", sans-serif;
     font-style: italic;
     background-color: #EADBC8;
+    display: flex;
     flex-flow: column nowrap;
     height:100vh;
     justify-content: space-between;
     margin: 0;
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48;
+  font-size: 2rem;
 }
 
 .header{
@@ -52,9 +62,10 @@ body{
     font-weight: 500;
     text-decoration: none;
     color:#102C57;
+    background-color: aqua;
     margin:0px;
     margin:10px 0;
-    
+    text-align: center;
 }
 
 footer{
@@ -70,7 +81,7 @@ footer{
     display:none;
 }
 
-@media (max-width:800px){
+@media (max-width:380px){
     .nav-bar{
         display: none;
     }
@@ -84,8 +95,9 @@ footer{
     .menuOn{
         display:flex;
         flex-flow: column nowrap;
+        justify-content: space-around;
         position:absolute;
-        width:25vw;
+        width:40vw;
         min-width: 150px;
         height:25vh;
         left:0;
@@ -102,7 +114,7 @@ footer{
     }
 
 }
-@media (min-width:800px){
+@media (min-width:380px){
     .menuOn{
         display:none;
     }
