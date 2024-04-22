@@ -43,7 +43,7 @@ body{
 .page-title{
     font-size: 4rem;
     background-color: blue;
-    min-width:400px;
+    text-wrap: nowrap;
     flex: 0 1 0;
     text-align: center;
     padding: 0 10px;
@@ -81,7 +81,7 @@ footer{
     display:none;
 }
 
-@media only screen and (max-width:380px){
+@media (max-width:480px){
     .nav-bar{
         display: none;
     }
@@ -92,6 +92,9 @@ footer{
         justify-content:space-around;
     }
     
+    .page-title{
+        font-size: 3rem;
+    }
     .menuOn{
         display:flex;
         flex-flow: column nowrap;
@@ -114,7 +117,7 @@ footer{
     }
 
 }
-@media (min-width:380px){
+@media (min-width:480px){
     .menuOn{
         display:none;
     }
